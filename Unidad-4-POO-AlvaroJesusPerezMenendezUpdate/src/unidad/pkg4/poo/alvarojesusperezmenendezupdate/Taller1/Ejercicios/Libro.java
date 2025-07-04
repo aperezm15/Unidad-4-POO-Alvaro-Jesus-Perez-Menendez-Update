@@ -13,6 +13,20 @@ public class Libro {
     String autor;
     int numeroPaginas;
 
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public void setNumeroPaginas(int numeroPaginas) {
+        this.numeroPaginas = numeroPaginas;
+    }
+    
+    
+
     public Libro() {
         titulo = "Desconocido";
         autor = "Desconocido";
@@ -29,6 +43,11 @@ public class Libro {
         System.out.println("El titulo es: "+titulo);
         System.out.println("El autor es: "+autor);
         System.out.println("Numero de paginas: "+numeroPaginas);
+    }
+
+    @Override
+    public String toString() {
+        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + ", numeroPaginas=" + numeroPaginas + '}';
     }
     
     
