@@ -26,5 +26,14 @@ public class MainEjercicio2 {
         System.out.println(coche1.modelo);
         System.out.println(coche1.velocidadMaxima);
     }
+    /*
+    El ejercicio 3 basicamente es lo mismo que hicimos aqui en el ejercicio 2,
+    en este se trata de acceder a atributos directamente el cual no deja
+    porque esta en private.
+    
+    por otro lado, estos no tienen GET y SET, para poder verlos o modificarlos
+    Esto es bueno para tener control de seguridad en ciertos atributos que tengas
+    donde por ejemplo solo dispongamos tener lectura en ellos.
+    */
     
 }
