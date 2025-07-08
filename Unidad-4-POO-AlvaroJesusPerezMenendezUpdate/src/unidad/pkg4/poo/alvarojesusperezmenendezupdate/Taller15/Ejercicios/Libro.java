@@ -27,6 +27,36 @@ public class Libro {
         this.disponibilidad = disponibilidad;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public void setNumeroPaginas(int numeroPaginas) {
+        this.numeroPaginas = numeroPaginas;
+    }
+
+    public void setEdicion(String edicion) {
+        this.edicion = edicion;
+    }
+
+    public void setSede(String sede) {
+        this.sede = sede;
+    }
+
+    public void setDisponibilidad(String disponibilidad) {
+        this.disponibilidad = disponibilidad;
+    }
+
+    
+    
     public Libro(String titulo, String autor, int numeroPaginas) {
         titulo = "";
         autor = "";
@@ -63,24 +93,24 @@ public class Libro {
     
     
     
-    public void generarInformacion() {
-        System.out.println("Informacion del Libro");
-        System.out.println("Titulo: "+titulo);
-        System.out.println("Autor: "+autor);
-        System.out.println("Numero de paginas: "+numeroPaginas);
-    }
-    
-    public void generarReportes() {
-        System.out.println("Reportes de renta");
-        System.out.println("ID: "+id);
-        System.out.println("Edicion: "+edicion);
-        System.out.println("Sede: "+sede);
-        System.out.println("Disponibilidad: "+disponibilidad);
-    }
-    
-    
-    public static Libro crearLibro(int id, String titulo, String autor, int numeroPaginas, String edicion, String sede, String disponibilidad){
-        return new Libro(id,titulo,autor,numeroPaginas,edicion,sede,disponibilidad);
-        }
+//    public void generarInformacion() {
+//        System.out.println("Informacion del Libro");
+//        System.out.println("Titulo: "+titulo);
+//        System.out.println("Autor: "+autor);
+//        System.out.println("Numero de paginas: "+numeroPaginas);
+//    }
+//    
+//    public void generarReportes() {
+//        System.out.println("Reportes de renta");
+//        System.out.println("ID: "+id);
+//        System.out.println("Edicion: "+edicion);
+//        System.out.println("Sede: "+sede);
+//        System.out.println("Disponibilidad: "+disponibilidad);
+//    }
+//    
+//    
+//    public static Libro crearLibro(int id, String titulo, String autor, int numeroPaginas, String edicion, String sede, String disponibilidad){
+//        return new Libro(id,titulo,autor,numeroPaginas,edicion,sede,disponibilidad);
+//        }
     
 }

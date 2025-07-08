@@ -15,11 +15,14 @@ public class MainEjercicio1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Libro libro1 = Libro.crearLibro(001, "Bella Botello", "Diosito", 999, "La mejor", "Pais de las maravillas", "No me quiere llevar a farmear");
+        Libro libro1 = ServiciosLibro.crearLibro(001, "Bella Botello", "Diosito", 999, "La mejor", "Pais de las maravillas", "No me quiere llevar a farmear");
+        GenerarInformacionLibro generarInfo = new GenerarInformacionLibro();
+        GenerarReporteLibro generarReporte = new GenerarReporteLibro();
         System.out.println("\n");
-        libro1.generarInformacion();
+        generarInfo.generarInformacion(libro1);
         System.out.println("\n");
-        libro1.generarReportes();
+        generarReporte.generarReportes(libro1);
+        
     }
     
 }
